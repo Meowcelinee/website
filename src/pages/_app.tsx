@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import type { AppProps } from "next/app";
+import { useRouter } from "next/router";
+import Footer from "../components/footer";
+import Header from "../components/header";
 import "../styles/globals.css";
 
 export const metadata: Metadata = {
@@ -8,5 +11,12 @@ export const metadata: Metadata = {
 };
 
 export default function App({ Component, pageProps }: AppProps) {
-    return <Component {...pageProps} />;
+    const router = useRouter();
+    return (
+        <>
+            {router.pathname === "/404" ? "" : <Header />}
+            <Component {...pageProps} />
+            {router.pathname === "/404" ? "" : <Footer />}
+        </>
+    );
 }
