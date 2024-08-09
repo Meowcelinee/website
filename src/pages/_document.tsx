@@ -7,10 +7,8 @@ export default function Document() {
         <Html lang="en">
             <Head />
             <body className="bg-mantle text-text m-0">
-                <Header />
                 <Main />
                 <NextScript />
-                <Footer />
             </body>
         </Html>
     );
