@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export default function PageNotFound() {
     return (
@@ -9,7 +9,7 @@ export default function PageNotFound() {
                         page not found 3:
                     </h1>
                     <Link
-                        className="text-center bg-gradient-to-br from-base to-surface0 px-3 py-2 rounded-lg drop-shadow-md hover:from-surface0 hover:to-surface2"
+                        className="text-center text-subtext0 bg-surface0 px-3 py-2 rounded-lg drop-shadow-md transition duration-300 hover:bg-surface2 hover:text-text"
                         href="/"
                     >
                         Go home
