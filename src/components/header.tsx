@@ -1,13 +1,11 @@
-import Image from "next/image";
-
 export default function Header() {
     return (
         <>
-            <div className="flex justify-center items-center gap-10 bg-mantle mb-4 md:mb-5 md:py-4 md:px-3 py-3 px-2">
+            <div className="flex justify-center items-center gap-10 bg-gradient-to-br from-base via-mantle to-mantle md:py-5 md:px-4 py-4 px-3">
                 <div className="">
                     <img
                         src="/images/ghpicrew.png"
-                        className="rounded-full m-auto h-40 w-40"
+                        className="rounded-full m-auto md:h-40 md:w-40 h-32 w-32"
                     />
                 </div>
                 <div className="">
