@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Project from '../components/projects/projects';
 
 export default function Homepage() {
     return (
@@ -8,7 +9,7 @@ export default function Homepage() {
                     navbar will go here (component ofc)
                 </div>
                 <div className="flex md:flex-row flex-col-reverse gap-5 md:gap-3 justify-center align-middle bg-base">
-                    <div className="flex flex-col gap-3 justify-center items-center p-3 mx-auto md:mx-0 w-11/12 md:w-2/5">
+                    {/* <div className="flex flex-col gap-3 justify-center items-center p-3 mx-auto md:mx-0 w-11/12 md:w-2/5">
                         <div className="block bg-gradient-to-br from-mantle via-mantle to-crust rounded-lg drop-shadow-md py-3 px-3 mx-auto w-full">
                             <div className="my-2">
                                 <Link
@@ -32,7 +33,7 @@ export default function Homepage() {
                                 </ul>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className="text-center py-3 px-3 mx-auto md:mx-0 w-11/12 md:w-2/5">
                         this will PROBABLY be links or smth
                     </div>
