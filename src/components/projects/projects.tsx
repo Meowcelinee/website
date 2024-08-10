@@ -1,6 +1,6 @@
 import Link from 'next/link';
 // AGHGAIOASUHIUHIOGSFDUUHISGUHDSGUHIOGUH;
-import projects from './projectData';
+import projects from '../../data/projectData';
 
 export default function Projects() {
     const projectList = projects.map((project) => {
