@@ -1,19 +1,48 @@
-enum LinkNames {
-    DISC = 'Discord',
-    GITGAY = 'Git.gay',
-    GH = 'Github',
-    MASTO = 'Mastodon (tech.lgbt)',
-    TWT = 'Twitter (NOT x)',
-    PRNS = 'Pronouns.page',
-    AMY = '<3',
+interface LinkItems {
+    name: string;
+    link?: string;
+    username?: string;
+    id: number;
 }
 
-enum Links {
-    DISC = 'https://discord.com/',
-    GITGAY = 'https://git.gay/nyatalie',
-    GH = 'https://github.com/Nyatalieeee',
-    MASTO = 'https://tech.lgbt/@ideltic',
-    TWT = 'https://x.com/Nyatalieeeee',
-    PRNS = 'https://en.pronouns.page/@Nyatalieeee',
-    AMY = 'https://tech.lgbt/@nightlake',
-}
+type LinkArray = Array<LinkItems>;
+
+const links: LinkArray = [
+    {
+        name: 'Discord',
+        username: '@nyatalieeee',
+        id: 1,
+    },
+    {
+        name: 'git.gay',
+        link: 'https://git.gay/nyatalie',
+        id: 2,
+    },
+    {
+        name: 'GitHub',
+        link: 'https://github.com/Nyatalieeee',
+        id: 3,
+    },
+    {
+        name: 'Mastodon (tech.lgbt)',
+        link: 'https://tech.lgbt/@ideltic',
+        id: 4,
+    },
+    {
+        name: 'Twitter (NOT x)',
+        link: 'https://x.com/Nyatalieeeee',
+        id: 5,
+    },
+    {
+        name: 'Pronouns.page',
+        link: 'https://en.pronouns.page/@Nyatalieeee',
+        id: 6,
+    },
+    {
+        name: '<3',
+        link: 'https://github.com/Nyameliaaaa',
+        id: 7,
+    },
+];
+
+export default links;
