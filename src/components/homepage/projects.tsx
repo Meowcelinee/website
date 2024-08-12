@@ -12,6 +12,7 @@ export default function Projects() {
                 <div className="my-2">
                     <Link
                         href={project.link}
+                        target="_blank"
                         className="text-xl text-pink font-semibold transition duration-300 hover:text-text"
                     >
                         {project.name}
