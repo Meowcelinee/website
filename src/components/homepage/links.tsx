@@ -7,7 +7,7 @@ export default function Links() {
         return (
             <Link
                 className={classNames(
-                    'bg-mantle rounded-xl text-text text-center font-medium md:text-lg mx-auto md:py-4 py-3 w-2/3',
+                    'bg-mantle rounded-xl text-text text-center font-medium md:text-lg mx-auto md:py-4 py-3 w-11/12 md:w-3/4',
                     {
                         'transition duration-300 hover:text-pink hover:bg-surface0':
                             link.link,
