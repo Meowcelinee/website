@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
     const router = useRouter();
     return (
         <>
-            {router.pathname === '/404' ? (
+            {router.pathname === '/404' || router.pathname === '/wip' ? (
                 ''
             ) : (
                 <>
@@ -24,7 +24,11 @@ export default function App({ Component, pageProps }: AppProps) {
                 </>
             )}
             <Component {...pageProps} />
-            {router.pathname === '/404' ? '' : <Footer />}
+            {router.pathname === '/404' || router.pathname === '/wip' ? (
+                ''
+            ) : (
+                <Footer />
+            )}
         </>
     );
 }
