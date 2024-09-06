@@ -47,12 +47,12 @@ const links: LinkArray = [
         name: '<3',
         link: 'https://github.com/Nyameliaaaa',
         username: 'Nyameliaaaa',
-        id: 8,
+        id: 7,
     },
     {
         name: 'Cool people',
         link: 'https://queercraft.net',
-        id: 7,
+        id: 8,
     },
 ];
 
