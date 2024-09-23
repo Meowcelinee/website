@@ -1,4 +1,12 @@
-const projects: Object[] = [
+interface Project {
+    name: string;
+    link: string;
+    language: string;
+    date: string;
+    id: number;
+}
+
+const projects: Project[] = [
     {
         name: 'Colon3 Bot',
         link: 'https://github.com/Nyatalieeee/colon3-bot',

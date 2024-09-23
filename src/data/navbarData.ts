@@ -1,4 +1,10 @@
-const navLinks = [
+interface Nav {
+    title: string;
+    link: string;
+    id: number;
+}
+
+const navLinks: Nav[] = [
     {
         title: 'home',
         link: '/',

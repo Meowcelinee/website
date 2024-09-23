@@ -1,13 +1,11 @@
-interface LinkItems {
+interface LinkItem {
     name: string;
     link?: string;
     username?: string;
     id: number;
 }
 
-type LinkArray = Array<LinkItems>;
-
-const links: LinkArray = [
+const links: LinkItem[] = [
     {
         name: 'Discord',
         username: '@nyatalieeee',
