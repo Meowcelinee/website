@@ -14,12 +14,12 @@ export default function Projects() {
                     <p className='md:text-lg text-md text-text my-6'>
                         basically just all those basic beginner projects that
                         everyone tells people to do, but yknow, they're on this
-                        site and you can use them too, if you wanted to (for
-                        some reason)
+                        site and you can use them too. if you wanted to for some
+                        reason
                     </p>
                 </div>
                 <br />
-                <div className='flex bg-gradient-to-br from-mantle via-base to-mantle rounded-lg w-5/6 mx-auto my-5 drop-shadow-md'>
+                <div className='md:flex block bg-gradient-to-br from-mantle via-base to-mantle rounded-lg md:w-5/6 w-3/4 mx-auto my-5 drop-shadow-md'>
                     <div className='w-2/3 rounded-lg py-5 px-6'>
                         <Link
                             href='/404'
@@ -30,12 +30,14 @@ export default function Projects() {
                         <div className='text-subtext1 font-medium my-8'>
                             A brief description of the project
                         </div>
-                        <div className='text-subtext1'>Date completed</div>
+                        <div className='text-subtext1 text-sm my-4'>
+                            Date completed
+                        </div>
                     </div>
-                    <div className='w-1/3 rounded-lg'>
+                    <div className='md:w-1/3 w-full rounded-lg'>
                         <img
                             src='/images/missing-texture.png'
-                            className='rounded-r-md'
+                            className='md:rounded-r-md rounded-b-md'
                         />
                     </div>
                 </div>
