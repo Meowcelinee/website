@@ -13,8 +13,7 @@ export default function NavbarLink() {
                     {
                         'text-overlay2 hover:text-subtext1':
                             router.pathname !== link.link,
-                        'text-subtext1 hover:text-text':
-                            router.pathname === link.link,
+                        'text-text': router.pathname === link.link,
                     }
                 )}
                 href={link.link}
