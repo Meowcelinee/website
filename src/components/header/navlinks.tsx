@@ -1,4 +1,4 @@
-import navLinks from '../data/navbarData';
+import navLinks from '../../data/navbarData';
 import Link from 'next/link';
 import classNames from 'classnames';
 import { useRouter } from 'next/router';

@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import Footer from '../components/footer';
-import Header from '../components/header';
-import Navbar from '../components/navbar';
+import Header from '../components/header/header';
+import Navbar from '../components/header/navbar';
 import '../styles/globals.css';
 
 export const metadata: Metadata = {
