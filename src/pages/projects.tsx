@@ -13,9 +13,9 @@ export default function Projects() {
                     </h3>
                     <p className='md:text-lg text-md text-text my-6'>
                         basically just all those basic beginner projects that
-                        everyone tells people to do, but yknow, they're on this
-                        site and you can use them too. if you wanted to for some
-                        reason
+                        everyone tells people to do, but yknow, they&apos;re on
+                        this site and you can use them too. if you wanted to for
+                        some reason
                     </p>
                 </div>
                 <br />
