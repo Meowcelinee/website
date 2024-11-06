@@ -1,7 +1,6 @@
 interface LocalProject {
     date: string;
     description: string;
-    id: number;
     image: string;
     link: string;
     title: string;
@@ -14,7 +13,6 @@ const localProjects: LocalProject[] = [
         date: 'Still a WIP',
         image: '/images/missing-texture.png',
         link: '/projects/calculator',
-        id: 1,
     }
 ];
 
