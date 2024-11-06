@@ -1,5 +1,6 @@
 import localProjects from '../data/localProjectData';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function LocalProjectList() {
     return localProjects.map(project => {
@@ -23,9 +24,12 @@ export default function LocalProjectList() {
                     </div>
                 </div>
                 <div className='md:w-1/3 w-full rounded-lg'>
-                    <img
+                    <Image
                         src={project.image}
+                        width={1000}
+                        height={1000}
                         className='md:rounded-r-md rounded-b-md'
+                        alt=''
                     />
                 </div>
             </div>
