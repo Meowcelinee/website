@@ -25,9 +25,14 @@ const links: LinkItem[] = [
         username: '@ideltic (regrettably)',
     },
     {
-        name: 'Twitter (NOT x)',
-        link: 'https://x.com/Nyatalieeeee',
-        username: '@Nyatalieeeee',
+        name: 'Threads',
+        link: 'https://www.threads.net/@nyatalieeeee',
+        username: '@Nyatalieeee',
+    },
+    {
+        name: 'Instagram',
+        link: 'https://www.instagram.com/nyatalieeeee/',
+        username: '@nyatalieeeee',
     },
     {
         name: 'Pronouns.page',
