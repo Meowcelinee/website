@@ -1,5 +1,4 @@
 name = "nyatalie"
-main = "src/pages/index.tsx"
+pages_build_output_dir = ".vercel/output/static"
 compatibility_date = "2024-11-06"
 compatibility_flags = [ "nodejs_compat" ]
-pages_build_output_dir = ".vercel/output/static"
