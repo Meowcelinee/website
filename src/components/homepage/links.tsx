@@ -2,7 +2,7 @@ import Link from 'next/link';
 import links from '../../data/linkData';
 
 export default function Links() {
-    const linkList = links.map((link) => {
+    return links.map(link => {
         if (!link.link) {
             return (
                 <div
@@ -28,5 +28,4 @@ export default function Links() {
             </Link>
         );
     });
-    return <>{linkList}</>;
 }
