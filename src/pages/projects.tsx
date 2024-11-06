@@ -19,7 +19,10 @@ export default function Projects() {
                     </p>
                 </div>
                 <br />
-                <LocalProjectList />
+                <h1 className='text-red md:text-4xl text-2xl font-bold text-center px-4 py-3 rounded-md border-red border-2 w-fit m-auto'>
+                    wip
+                </h1>
+                {/* <LocalProjectList /> */}
             </div>
         </>
     );
