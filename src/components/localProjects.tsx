@@ -2,11 +2,11 @@ import localProjects from '../data/localProjectData';
 import Link from 'next/link';
 
 export default function LocalProjectList() {
-    const proj = localProjects.map((project) => {
+    return localProjects.map(project => {
         return (
             <div
                 className='md:flex block bg-gradient-to-br from-mantle via-base to-mantle rounded-lg md:w-5/6 w-3/4 mx-auto my-5 drop-shadow-md'
-                key={project.id}
+                key={project.title}
             >
                 <div className='md:w-2/3 w-full rounded-lg py-5 px-6'>
                     <Link
@@ -31,5 +31,4 @@ export default function LocalProjectList() {
             </div>
         );
     });
-    return proj;
 }

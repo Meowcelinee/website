@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 
 export default function NavbarLink() {
     const router = useRouter();
-    const navLinkList = navLinks.map((link) => {
+    const navLinkList = navLinks.map(link => {
         return (
             <Link
                 className={classNames(
@@ -17,7 +17,7 @@ export default function NavbarLink() {
                     }
                 )}
                 href={link.link}
-                key={link.id}
+                key={link.title}
             >
                 {link.title}
             </Link>
