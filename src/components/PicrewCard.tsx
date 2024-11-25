@@ -5,7 +5,7 @@ import picrews from '../data/picrewData';
 export default function PicrewCards() {
     return picrews.map(picrew => {
         return (
-            <div className='bg-mantle w-72 my-5 md:mx-3 mx-auto p-4 rounded-md'>
+            <div className='bg-mantle w-72 my-5 md:mx-3 mx-auto p-4 rounded-md' key={picrew.name}>
                 <Link href={picrew.image} target='_blank'>
                     <Image
                         src={picrew.image}
