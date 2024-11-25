@@ -13,8 +13,8 @@ const navLinks: Nav[] = [
         link: '/about',
     },
     {
-        title: 'local projects',
-        link: '/projects',
+        title: 'picrews',
+        link: '/picrews',
     }
 ]
 
