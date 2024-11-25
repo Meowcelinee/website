@@ -27,7 +27,7 @@ export default function PicrewCards() {
                     href={picrew.link}
                     target='_blank'
                 >
-                    Source &#129109;
+                    Source <i className='nf nf-oct-link_external text-xs' />
                 </Link>
             </div>
         );
