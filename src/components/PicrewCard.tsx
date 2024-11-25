@@ -11,7 +11,7 @@ export default function PicrewCards() {
                         src={picrew.image}
                         width={500}
                         height={500}
-                        className='rounded-md drop-shadow-lg mx-auto mb-2 md:w-fit transition-all duration-200 md:hover:rotate-2 md:hover:scale-105'
+                        className='rounded-md drop-shadow-lg mx-auto mb-2 md:w-fit transition-all duration-150 md:hover:scale-105'
                         alt=''
                     />
                 </Link>
