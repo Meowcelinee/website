@@ -9,21 +9,6 @@ import '../styles/globals.css';
 export const metadata: Metadata = {
     title: "natalie's site :3",
     description: 'made with next',
-    openGraph: {
-        title: 'title test',
-        description: 'description test',
-        url: 'https://nyatalie.pages.dev/',
-        siteName: 'name test',
-        images: [
-            {
-                url: '/images/natalie.png',
-                width: 500,
-                height: 500,
-            },
-        ],
-        locale: 'en_US',
-        type: 'website',
-    },
 };
 
 export default function App({ Component, pageProps }: AppProps) {
