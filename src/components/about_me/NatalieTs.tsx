@@ -16,19 +16,27 @@ export default function NatalieTs() {
                 <div className='md:pl-8 pl-4'>
                     {/* first name */}
                     firstName<span className='text-teal'>:</span>{' '}
-                    <span className='text-green'>'{natalie.firstName}'</span>
+                    <span className='text-green'>
+                        &apos;{natalie.firstName}&apos;
+                    </span>
                     , <br />
                     {/* middle name */}
                     middleName<span className='text-teal'>:</span>{' '}
-                    <span className='text-green'>'{natalie.middleName}'</span>
+                    <span className='text-green'>
+                        &apos;{natalie.middleName}&apos;
+                    </span>
                     , <br />
                     {/* last name */}
                     lastName<span className='text-teal'>:</span>{' '}
-                    <span className='text-green'>'{natalie.lastName}'</span>
+                    <span className='text-green'>
+                        &apos;{natalie.lastName}&apos;
+                    </span>
                     , <br />
                     {/* birthday */}
                     birthday<span className='text-teal'>:</span>{' '}
-                    <span className='text-green'>'{natalie.birthday}'</span>
+                    <span className='text-green'>
+                        &apos;{natalie.birthday}&apos;
+                    </span>
                     , <br />
                     {/* orientation */}
                     orientation<span className='text-teal'>:</span>{' '}
@@ -37,13 +45,13 @@ export default function NatalieTs() {
                         {/* lesbian */}
                         romantic<span className='text-teal'>:</span>{' '}
                         <span className='text-green'>
-                            '{natalie.orientation.romantic}'
+                            &apos;{natalie.orientation.romantic}&apos;
                         </span>
                         , <br />
                         {/* demisexual */}
                         sexual<span className='text-teal'>:</span>{' '}
                         <span className='text-green'>
-                            '{natalie.orientation.sexual}'
+                            &apos;{natalie.orientation.sexual}&apos;
                         </span>
                         , <br />
                     </div>
@@ -52,7 +60,9 @@ export default function NatalieTs() {
                     pronouns<span className='text-teal'>:</span>{' '}
                     <span className='text-peach'>[</span> <br />
                     <div className='md:pl-8 pl-4'>
-                        <span className='text-green'>'{natalie.pronouns}'</span>
+                        <span className='text-green'>
+                            &apos;{natalie.pronouns}&apos;
+                        </span>
                         , <br />
                     </div>
                     <span className='text-peach'> ]</span>, <br />
@@ -64,7 +74,7 @@ export default function NatalieTs() {
                             return (
                                 <>
                                     <span className='text-green'>
-                                        '{interest}'
+                                        &apos;{interest}&apos;
                                     </span>
                                     , <br />
                                 </>
