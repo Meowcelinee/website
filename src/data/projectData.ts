@@ -31,6 +31,12 @@ const projects: Project[] = [
         date: '08/01/2024',
     },
     {
+        name: 'Pylist',
+        link: '/wip',
+        language: 'Python',
+        date: '12/03/2024',
+    },
+    {
         name: 'Colon3 Bot',
         link: 'https://github.com/Nyatalieeee/colon3-bot',
         language: 'Javascript',
