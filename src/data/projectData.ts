@@ -31,6 +31,12 @@ const projects: Project[] = [
         date: '08/01/2024',
     },
     {
+        name: 'mystery project :)',
+        link: '/wip',
+        language: 'Typescript/TSX',
+        date: '11/28/2024',
+    },
+    {
         name: 'Pylist',
         link: '/wip',
         language: 'Python',

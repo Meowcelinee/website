@@ -1,9 +1,8 @@
 import Link from 'next/link';
-// AGHGAIOASUHIUHIOGSFDUUHISGUHDSGUHIOGUH;
-import projects from '../../data/projectData';
+import projects from '@/src/data/projectData';
 
-export default function Projects() {
-    const projectList = projects.map((project) => {
+export default function Project() {
+    return projects.map(project => {
         return (
             <div
                 className='block bg-gradient-to-br from-mantle via-mantle to-crust rounded-lg drop-shadow-md py-3 px-3 mx-auto w-full'
@@ -20,7 +19,9 @@ export default function Projects() {
                 </div>
                 <div>
                     <ul className='text-sm list-disc mx-4'>
-                        <li className='marker:text-pink'>{project.language}</li>
+                        <li className='marker:text-pink'>
+                            Language(s) used: {project.language}
+                        </li>
                         <li className='marker:text-pink'>
                             Date started: {project.date}
                         </li>
@@ -29,5 +30,4 @@ export default function Projects() {
             </div>
         );
     });
-    return <>{projectList}</>;
 }
