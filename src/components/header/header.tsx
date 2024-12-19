@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Navbar from './navbar';
 
 export default function Header() {
     return (
@@ -20,6 +21,7 @@ export default function Header() {
                     <p className='text-sm text-subtext1 drop-shadow-sm'>hi</p>
                 </div>
             </div>
+            <Navbar />
         </>
     );
 }

@@ -3,7 +3,6 @@ import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
 import Footer from '../components/footer';
 import Header from '../components/header/header';
-import Navbar from '../components/header/navbar';
 import '../styles/globals.css';
 
 export const metadata: Metadata = {
@@ -11,23 +10,20 @@ export const metadata: Metadata = {
     description: 'made with next',
 };
 
+const hfIgnore = ['/404', '/wip'];
+
 export default function App({ Component, pageProps }: AppProps) {
     const router = useRouter();
     return (
         <>
-            {router.pathname === '/404' || router.pathname === '/wip' ? (
-                ''
+            {hfIgnore.indexOf(router.pathname) > -1 ? (
+                <Component {...pageProps} />
             ) : (
                 <>
                     <Header />
-                    <Navbar />
+                    <Component {...pageProps} />
+                    <Footer />
                 </>
-            )}
-            <Component {...pageProps} />
-            {router.pathname === '/404' || router.pathname === '/wip' ? (
-                ''
-            ) : (
-                <Footer />
             )}
         </>
     );
