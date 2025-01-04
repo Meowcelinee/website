@@ -73,7 +73,7 @@ export default function NatalieTs() {
                         {natalie.interests?.map(interest => {
                             return (
                                 <>
-                                    <span className='text-green'>
+                                    <span className='text-green' key={interest}>
                                         &apos;{interest}&apos;
                                     </span>
                                     , <br />

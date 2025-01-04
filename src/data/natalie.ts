@@ -26,7 +26,7 @@ export const natalie: Nerd = {
         sexual: 'Demisexual',
     },
     pronouns: ['she/her'],
-    interests: ['Music', 'Programming', 'Destiny 2', 'Minecraft', 'Amelia'],
+    interests: ['Music', 'Programming', 'Destiny 2', 'Minecraft', 'Women'],
     colon: 3,
 };
 
