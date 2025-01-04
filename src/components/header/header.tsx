@@ -1,27 +1,27 @@
 import Image from 'next/image';
 import Navbar from './navbar';
+import Link from 'next/link';
 
 export default function Header() {
     return (
-        <>
-            <div className='flex justify-center items-center gap-10 bg-gradient-to-b from-base via-mantle to-mantle md:py-5 md:px-4 py-4 px-3'>
-                <div className=''>
-                    <Image
-                        src='/images/natalie.png'
-                        width={500}
-                        height={500}
-                        className='rounded-full drop-shadow-lg m-auto md:h-40 md:w-40 h-28 w-28'
-                        alt=''
-                    />
+        <header className='flex justify-center bg-gradient-to-br from-crust via-mantle to-crust drop-shadow-xl mx-auto'>
+            <div className='flex md:gap-2 w-full'>
+                <div className='flex align-middle md:mx-8 mx-3 my-2'>
+                    <Link href='/about'>
+                        <Image
+                            className='rounded-full transition duration-500 hover:scale-110'
+                            src='/images/natalie.png'
+                            width={66}
+                            height={66}
+                            alt='natalie'
+                            title="natalie's favorite picrew"
+                        />
+                    </Link>
                 </div>
-                <div className=''>
-                    <p className='md:text-2xl text-xl font-semibold drop-shadow-lg'>
-                        natalie raine :3
-                    </p>
-                    <p className='text-sm text-subtext1 drop-shadow-sm'>hi</p>
+                <div className='my-auto'>
+                    <Navbar />
                 </div>
             </div>
-            <Navbar />
-        </>
+        </header>
     );
 }
