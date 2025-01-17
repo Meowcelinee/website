@@ -1,25 +1,36 @@
-import Projects from '@/src/components/homepage/projects';
-import Links from '@/src/components/homepage/links';
+import Image from 'next/image';
+import Directory from '@/src/components/homepage/Directory';
 
 export default function Homepage() {
     return (
         <>
-            <div className='flex justify-center bg-base md:flex-row flex-col gap-14 md:px-12 px-6 md:py-3 py-2 w-full'>
-                <div className='flex flex-col gap-2 md:my-3 my-2 mx-auto w-11/12 md:w-1/2'>
-                    <div className='flex flex-col gap-4'>
-                        <h1 className='md:text-3xl text-2xl text-pink font-bold mx-1 my-2 md:my-3 md:mb-5'>
-                            Links
+            <div className='animate-appear bg-gradient-to-b from-base to-mantle md:py-12 py-16'>
+                <div className='flex md:flex-row flex-col gap-8 justify-center'>
+                    <div className='flex md:justify-end justify-center my-auto'>
+                        <Image
+                            width={250}
+                            height={250}
+                            src='/images/picrews/2439112.png'
+                            alt=''
+                            className='rounded-full transition duration-700 hover:-translate-y-3'
+                        />
+                    </div>
+                    <div className='md:justify-start flex flex-col justify-center md:mx-0 m-auto text-left'>
+                        <h1 className='md:text-4xl text-4xl font-semibold'>
+                            lorem ipsum
                         </h1>
-                        <Links />
+                        <p className='text-subtext0'>
+                            welcome to my website :)
+                        </p>
                     </div>
                 </div>
-                <div className='flex flex-col gap-4 md:my-3 my-2 mx-auto w-11/12 md:w-1/2'>
-                    <div className='flex flex-col gap-4'>
-                        <h1 className='md:text-3xl text-2xl text-pink font-bold mx-1 my-2 md:my-3'>
-                            Projects
-                        </h1>
-                        <Projects />
-                    </div>
+            </div>
+            <div className='animate-appearShort bg-mantle w-full px-4 py-3 md:my-12 my-4'>
+                <h2 className='md:text-3xl text-2xl text-center font-semibold'>
+                    directory
+                </h2>
+                <div className='flex md:flex-row flex-col justify-between md:px-12 px-6 py-4 mx-auto max-w-screen-xl'>
+                    <Directory />
                 </div>
             </div>
         </>
