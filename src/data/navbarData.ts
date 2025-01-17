@@ -5,10 +5,6 @@ interface NavLink {
 
 const navLinks: NavLink[] = [
     {
-        title: 'home',
-        link: '/',
-    },
-    {
         title: 'about',
         link: '/about',
     },
@@ -17,9 +13,14 @@ const navLinks: NavLink[] = [
         link: '/picrews',
     },
     {
+        title: 'projects',
+        link: '/projects',
+    },
+    {
         title: 'wallpapers',
         link: '/wallpapers',
     },
 ];
 
 export default navLinks;
+export type { NavLink };
