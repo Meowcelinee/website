@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import links from '../../data/linkData';
+import links from '@/src/data/linkData';
 
 export default function Links() {
     return links.map(link => {
@@ -10,9 +10,9 @@ export default function Links() {
                     key={link.name}
                 >
                     <p className='font-medium md:text-lg'>{link.name}</p>
-                    <p className='text-sm text-subtext0'>
-                        {link.username ?? ''}
-                    </p>
+                    {link.username && (
+                        <p className='text-sm text-subtext0'>{link.username}</p>
+                    )}
                 </div>
             );
         }
@@ -24,7 +24,9 @@ export default function Links() {
                 key={link.name}
             >
                 <p>{link.name}</p>
-                <p className='text-sm text-subtext0'>{link.username ?? ''}</p>
+                {link.username && (
+                    <p className='text-sm text-subtext0'>{link.username}</p>
+                )}
             </Link>
         );
     });

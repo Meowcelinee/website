@@ -12,7 +12,7 @@ export default function Homepage() {
                             height={250}
                             src='/images/picrews/2439112.png'
                             alt=''
-                            className='rounded-full transition duration-700 hover:-translate-y-3'
+                            className='rounded-full transition duration-700 md:hover:-translate-y-3'
                         />
                     </div>
                     <div className='md:justify-start flex flex-col justify-center md:mx-0 m-auto text-left'>

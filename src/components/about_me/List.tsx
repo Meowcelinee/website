@@ -3,7 +3,7 @@ import { getAge } from '@/src/data/natalie';
 
 export default function List() {
     return (
-        <ul className='flex flex-col gap-3 list-disc list-inside marker:text-pink'>
+        <ul className='flex flex-col gap-3 list-disc list-inside odd:marker:text-pink even:marker:text-sky'>
             <li>
                 i&apos;m a {getAge()} year old trans girl who likes music,
                 programming (sometimes), destiny 2, minecraft, and other women
