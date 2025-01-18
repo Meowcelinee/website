@@ -7,32 +7,31 @@ import '@/src/styles/globals.css';
 
 export default function App({ Component, pageProps }: AppProps) {
     const router = useRouter();
+
+    if (router.pathname === '/404') return <Component {...pageProps} />;
+
     return (
         <>
             <Head>
                 <title>my site :3</title>
-                <meta name='description' content='made with next' />
+                <meta name='description' content='made with nextjs' />
 
-                <meta property='og:title' content="natalie's site" />
+                <meta property='og:title' content="natalie's website :3" />
                 <meta
                     property='og:description'
-                    content='shittily made with nextjs'
+                    content='a glorified "about me"'
                 />
                 <meta
                     property='og:image'
-                    content='/images/picrews/2439112.png'
+                    content='https://nyatalie.pages.dev/images/picrews/2439112.png'
                 />
+                <meta property='og:image:width' content='300' />
+                <meta property='og:image:height' content='300' />
             </Head>
 
-            {router.pathname === '/404' ? (
-                <Component {...pageProps} />
-            ) : (
-                <>
-                    <Header />
-                    <Component {...pageProps} />
-                    <Footer />
-                </>
-            )}
+            <Header />
+            <Component {...pageProps} />
+            <Footer />
         </>
     );
 }
