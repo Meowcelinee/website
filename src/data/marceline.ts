@@ -13,8 +13,8 @@ interface Nerd {
     colon?: three;
 }
 
-export const natalie: Nerd = {
-    firstName: 'Natalie',
+export const marceline: Nerd = {
+    firstName: 'Marceline',
     middleName: 'Ashley',
     lastName: 'Raine',
     birthday: '2006-01-13',

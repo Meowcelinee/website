@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 <title>my site :3</title>
                 <meta name='description' content='made with nextjs' />
 
-                <meta property='og:title' content="natalie's website :3" />
+                <meta property='og:title' content="marceline's website :3" />
                 <meta
                     property='og:description'
                     content='a glorified "about me"'

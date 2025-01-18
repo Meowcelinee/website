@@ -17,9 +17,12 @@ export default function Homepage() {
                     </div>
                     <div className='md:justify-start flex flex-col justify-center md:mx-0 m-auto text-left'>
                         <h1 className='md:text-4xl text-4xl font-semibold'>
-                            lorem ipsum
+                            marceline raine :3
                         </h1>
-                        <p className='text-subtext0'>
+                        <h3 className='md:text-xl text-lg font-semibold text-subtext1 italic'>
+                            (aka meowceline)
+                        </h3>
+                        <p className='text-subtext0 mt-2'>
                             welcome to my website :)
                         </p>
                     </div>

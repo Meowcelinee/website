@@ -1,4 +1,4 @@
-import NatalieTs from './NatalieTs';
+import MarcelineTs from './MarcelineTs';
 
 export default function Codeblock() {
     return (
@@ -8,10 +8,10 @@ export default function Codeblock() {
                 id='aboutMeCodeblock'
             >
                 <div className='border-b-2 border-surface1 mb-2 text-subtext0 italic text-sm px-1'>
-                    natalie.ts
+                    marceline.ts
                 </div>
                 <div className='font-medium md:text-sm text-xs px-2'>
-                    <NatalieTs />
+                    <MarcelineTs />
                 </div>
             </div>
         </>
