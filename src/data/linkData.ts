@@ -20,9 +20,9 @@ const links: LinkItem[] = [
         username: 'Meowcelinee',
     },
     {
-        name: 'Mastodon (tech.lgbt)',
+        name: 'Mastodon',
         link: 'https://tech.lgbt/@ideltic',
-        username: '@ideltic (regrettably)',
+        username: 'tech.lgbt/@ideltic',
     },
     {
         name: 'Threads',
@@ -51,3 +51,4 @@ const links: LinkItem[] = [
 ];
 
 export default links;
+export type { LinkItem };

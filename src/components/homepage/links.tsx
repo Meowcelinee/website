@@ -1,33 +1,32 @@
 import Link from 'next/link';
-import links from '@/src/data/linkData';
+import { LinkItem } from '@/src/data/linkData';
 
-export default function Links() {
-    return links.map(link => {
-        if (!link.link) {
-            return (
-                <div
-                    className='bg-mantle rounded-2xl text-center mx-auto md:py-4 py-3 w-11/12 md:w-3/4'
-                    key={link.name}
-                >
-                    <p className='font-medium md:text-lg'>{link.name}</p>
-                    {link.username && (
-                        <p className='text-sm text-subtext0'>{link.username}</p>
-                    )}
-                </div>
-            );
-        }
-        return (
-            <Link
-                className='bg-mantle rounded-2xl text-text text-center font-medium md:text-lg mx-auto md:py-4 py-3 w-11/12 md:w-3/4 transition duration-300 hover:text-pink hover:bg-surface0'
-                href={link.link}
-                target='_blank'
-                key={link.name}
-            >
-                <p>{link.name}</p>
-                {link.username && (
-                    <p className='text-sm text-subtext0'>{link.username}</p>
-                )}
-            </Link>
-        );
-    });
+export default function AboutLink(props: LinkItem) {
+    return props.link ? (
+        <Link
+            className='bg-mantle border-2 border-transparent rounded-lg my-2 py-2 px-2 md:w-[49%] w-full transition duration-300 hover:border-subtext0 hover:bg-base hover:-translate-y-1'
+            href={props.link}
+            target='_blank'
+        >
+            <div className='flex flex-col'>
+                <h3 className='md:text-2xl text-xl text-pink font-medium w-fit'>
+                    {props.name}
+                </h3>
+                <h2 className='md:text-lg text-subtext1 font-medium'>
+                    {props.username}
+                </h2>
+            </div>
+        </Link>
+    ) : (
+        <div className='bg-mantle border-2 border-transparent rounded-lg my-2 py-2 px-2 md:w-[49%] w-full'>
+            <div className='flex flex-col'>
+                <h3 className='md:text-2xl text-xl font-medium w-fit'>
+                    {props.name}
+                </h3>
+                <h2 className='md:text-lg text-subtext1 font-medium'>
+                    {props.username}
+                </h2>
+            </div>
+        </div>
+    );
 }
