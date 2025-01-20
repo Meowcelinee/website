@@ -7,37 +7,37 @@ interface LinkItem {
 const links: LinkItem[] = [
     {
         name: 'Discord',
-        username: '@nyatalieeee',
+        username: '@meowcelinee.',
     },
     {
         name: 'git.gay',
-        link: 'https://git.gay/nyatalie',
-        username: 'nyatalie',
+        link: 'https://git.gay/meowcelinee',
+        username: 'meowcelinee',
     },
     {
         name: 'GitHub',
-        link: 'https://github.com/Nyatalieeee',
-        username: 'Nyatalieeee',
+        link: 'https://github.com/Meowcelinee',
+        username: 'Meowcelinee',
     },
     {
-        name: 'Mastodon (tech.lgbt)',
+        name: 'Mastodon',
         link: 'https://tech.lgbt/@ideltic',
-        username: '@ideltic (regrettably)',
+        username: 'tech.lgbt/@ideltic',
     },
     {
         name: 'Threads',
-        link: 'https://www.threads.net/@nyatalieeeee',
-        username: '@Nyatalieeee',
+        link: 'https://www.threads.net/@meowcelineeee',
+        username: '@Meowcelineeee',
     },
     {
         name: 'Instagram',
-        link: 'https://www.instagram.com/nyatalieeeee/',
-        username: '@nyatalieeeee',
+        link: 'https://www.instagram.com/meowcelineeee/',
+        username: '@meowcelineeee',
     },
     {
         name: 'Pronouns.page',
         link: 'https://en.pronouns.page/@Nyatalieeee',
-        username: '@Nyatalieeee',
+        username: '@Nyatalieeee (for now :p)',
     },
     {
         name: '<3',
@@ -51,3 +51,4 @@ const links: LinkItem[] = [
 ];
 
 export default links;
+export type { LinkItem };

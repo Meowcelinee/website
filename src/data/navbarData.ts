@@ -1,21 +1,26 @@
-interface Nav {
+interface NavLink {
     title: string;
     link: string;
 }
 
-const navLinks: Nav[] = [
+const navLinks: NavLink[] = [
     {
-        title: 'home',
-        link: '/',
+        title: 'about',
+        link: '/about',
     },
     {
-        title: 'about me',
-        link: '/about',
+        title: 'projects',
+        link: '/projects',
     },
     {
         title: 'picrews',
         link: '/picrews',
-    }
-]
+    },
+    {
+        title: 'wallpapers',
+        link: '/wallpapers',
+    },
+];
 
 export default navLinks;
+export type { NavLink };

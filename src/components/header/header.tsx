@@ -1,27 +1,40 @@
+'use client';
+
 import Image from 'next/image';
 import Navbar from './navbar';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import classNames from 'classnames';
 
 export default function Header() {
+    const pathname = usePathname();
+
     return (
-        <>
-            <div className='flex justify-center items-center gap-10 bg-gradient-to-b from-base via-mantle to-mantle md:py-5 md:px-4 py-4 px-3'>
-                <div className=''>
-                    <Image
-                        src='/images/natalie.png'
-                        width={500}
-                        height={500}
-                        className='rounded-full drop-shadow-lg m-auto md:h-40 md:w-40 h-28 w-28'
-                        alt=''
-                    />
+        <header
+            className={classNames(
+                'flex justify-center bg-gradient-to-br from-crust via-mantle to-crust drop-shadow-md mx-auto',
+                {
+                    visible: pathname !== '/',
+                    hidden: pathname === '/',
+                }
+            )}
+        >
+            <div className='flex md:gap-2 w-full'>
+                <div className='flex align-middle md:mx-8 mx-3 my-3'>
+                    <Link href='/'>
+                        <Image
+                            className='transition duration-500 md:hover:scale-110'
+                            src='/images/home.png'
+                            width={35}
+                            height={35}
+                            alt=''
+                        />
+                    </Link>
                 </div>
-                <div className=''>
-                    <p className='md:text-2xl text-xl font-semibold drop-shadow-lg'>
-                        natalie raine :3
-                    </p>
-                    <p className='text-sm text-subtext1 drop-shadow-sm'>hi</p>
+                <div className='my-auto'>
+                    <Navbar />
                 </div>
             </div>
-            <Navbar />
-        </>
+        </header>
     );
 }
