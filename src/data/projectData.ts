@@ -1,64 +1,135 @@
+enum Lang {
+    CSS = 'CSS',
+    HTML = 'HTML/CSS',
+    JS = 'Javascript',
+    PYTHON = 'Python',
+    TSX = 'Typescript/TSX',
+}
+
+type Date = { start: string; complete?: string };
+
+interface Language {
+    lang: Lang;
+    img: string;
+}
+
 interface Project {
     name: string;
-    link: string;
-    language: string;
-    date: string;
+    link?: string;
+    language: Language;
+    date: Date;
+    wip: boolean;
 }
 
 const projects: Project[] = [
     {
         name: 'My Original Site (pages.gay)',
         link: 'https://nyatalie.pages.gay',
-        language: 'HTML/CSS',
-        date: '03/13/2024',
+        language: {
+            lang: Lang.HTML,
+            img: '/images/lang/html.png',
+        },
+        date: {
+            start: '3/13/2024',
+        },
+        wip: false,
     },
     {
         name: 'Original Gae Enterprises Site',
         link: 'https://gae-ent.vercel.app/',
-        language: 'HTML/CSS',
-        date: '04/17/2024',
+        language: {
+            lang: Lang.HTML,
+            img: '/images/lang/html.png',
+        },
+        date: {
+            start: '4/17/2024',
+            complete: '8/1/2024',
+        },
+        wip: false,
     },
     {
-        name: 'This Site (i love recursion)',
+        name: 'This Site',
         link: '/',
-        language: 'Typescript/TSX',
-        date: '08/04/2024',
+        language: {
+            lang: Lang.TSX,
+            img: '/images/lang/react.png',
+        },
+        date: {
+            start: '8/4/2024',
+        },
+        wip: true,
     },
     {
         name: 'New Gae Enterprises Site',
         link: 'https://gae-ent.pages.dev/',
-        language: 'Typescript/TSX',
-        date: '08/01/2024',
+        language: {
+            lang: Lang.TSX,
+            img: '/images/lang/react.png',
+        },
+        date: {
+            start: '8/1/2024',
+        },
+        wip: true,
     },
     {
         name: 'mystery project :)',
-        link: '/wip',
-        language: 'Typescript/TSX',
-        date: '11/28/2024',
+        language: {
+            lang: Lang.TSX,
+            img: '/images/lang/react.png',
+        },
+        date: {
+            start: '11/28/2024',
+        },
+        wip: true,
     },
     {
         name: 'Pylist',
-        link: '/wip',
-        language: 'Python',
-        date: '12/03/2024',
+        language: {
+            lang: Lang.PYTHON,
+            img: '/images/lang/python.png',
+        },
+        date: {
+            start: '12/3/2024',
+        },
+        wip: true,
     },
     {
         name: 'Colon3 Bot',
         link: 'https://github.com/Nyatalieeee/colon3-bot',
-        language: 'Javascript',
-        date: '06/06/2024',
+        language: {
+            lang: Lang.JS,
+            img: '/images/lang/js.png',
+        },
+        date: {
+            start: '6/6/2024',
+        },
+        wip: false,
     },
     {
         name: 'Picrew Userstyle',
         link: 'https://github.com/catppuccin/userstyles/tree/main/styles/picrew',
-        language: 'CSS',
-        date: '02/25/2024',
+        language: {
+            lang: Lang.CSS,
+            img: '/images/lang/css.png',
+        },
+        date: {
+            start: '2/25/2024',
+            complete: '3/17/2024',
+        },
+        wip: false,
     },
     {
         name: 'NameMC Userstyle',
         link: 'https://github.com/catppuccin/userstyles/tree/main/styles/namemc',
-        language: 'CSS',
-        date: '08/13/2024',
+        language: {
+            lang: Lang.CSS,
+            img: '/images/lang/css.png',
+        },
+        date: {
+            start: '8/13/2024',
+            complete: '9/7/2024',
+        },
+        wip: false,
     },
 ];
 

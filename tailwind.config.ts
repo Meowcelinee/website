@@ -1,22 +1,31 @@
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
     content: [
-        "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-        "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+        './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+        './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     ],
     theme: {
         extend: {
-            backgroundImage: {
-                "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-                "gradient-conic":
-                    "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+            keyframes: {
+                appear: {
+                    '0%': {
+                        opacity: '0',
+                    },
+                    '100%': {
+                        opacity: '1',
+                    },
+                },
+            },
+            animation: {
+                appear: 'appear 1.25s ease-in-out',
+                appearShort: 'appear 0.5s ease-in',
             },
         },
     },
     plugins: [
-        require("@catppuccin/tailwindcss")({
-            defaultFlavour: "macchiato",
+        require('@catppuccin/tailwindcss')({
+            defaultFlavour: 'macchiato',
         }),
     ],
 };

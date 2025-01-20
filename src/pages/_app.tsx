@@ -1,30 +1,37 @@
-import type { Metadata } from 'next';
 import type { AppProps } from 'next/app';
 import { useRouter } from 'next/router';
-import Footer from '../components/footer';
-import Header from '../components/header/header';
-import '../styles/globals.css';
-
-export const metadata: Metadata = {
-    title: "natalie's site :3",
-    description: 'made with next',
-};
-
-const hfIgnore = ['/404', '/wip'];
+import Head from 'next/head';
+import Footer from '@/src/components/footer';
+import Header from '@/src/components/header/header';
+import '@/src/styles/globals.css';
 
 export default function App({ Component, pageProps }: AppProps) {
     const router = useRouter();
+
+    if (router.pathname === '/404') return <Component {...pageProps} />;
+
     return (
         <>
-            {hfIgnore.indexOf(router.pathname) > -1 ? (
-                <Component {...pageProps} />
-            ) : (
-                <>
-                    <Header />
-                    <Component {...pageProps} />
-                    <Footer />
-                </>
-            )}
+            <Head>
+                <title>my site :3</title>
+                <meta name='description' content='made with nextjs' />
+
+                <meta property='og:title' content="marceline's website :3" />
+                <meta
+                    property='og:description'
+                    content='a glorified "about me"'
+                />
+                <meta
+                    property='og:image'
+                    content='https://nyatalie.pages.dev/images/picrews/2439112.png'
+                />
+                <meta property='og:image:width' content='300' />
+                <meta property='og:image:height' content='300' />
+            </Head>
+
+            <Header />
+            <Component {...pageProps} />
+            <Footer />
         </>
     );
 }
