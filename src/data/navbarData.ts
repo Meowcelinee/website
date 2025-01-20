@@ -9,12 +9,12 @@ const navLinks: NavLink[] = [
         link: '/about',
     },
     {
-        title: 'picrews',
-        link: '/picrews',
-    },
-    {
         title: 'projects',
         link: '/projects',
+    },
+    {
+        title: 'picrews',
+        link: '/picrews',
     },
     {
         title: 'wallpapers',
