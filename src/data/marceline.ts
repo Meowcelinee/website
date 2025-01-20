@@ -29,7 +29,7 @@ export const marceline: Nerd = {
 
 const date = new Date();
 
-export function getAge() {
+export function getAge(): number {
     const birthday = [1, 17, 2006];
     const currentDate = new Date().toLocaleDateString().split('/');
     const today = [
@@ -38,18 +38,14 @@ export function getAge() {
         Number(currentDate[2]),
     ];
 
-    /*
-     *  IF this month's number is GREATER THAN the birthday month's number,
-     *  AND today's number (of the month) is GREATER THAN the birthday's number,
-     *  this means the current date is *after* the birthday date,
-     *  and the larger age should be returned.
-     */
-    if (today[0] >= birthday[0]) {
-        if (today[1] >= birthday[1]) {
-            return today[2] - birthday[2];
-        }
-    }
-    return today[2] - birthday[2] - 1;
+    const monthAfterBirthday: boolean = today[0] >= birthday[0];
+    const todayAfterBirthday: boolean = today[1] >= birthday[1];
+
+    const postBirthdayAge: number = today[2] - birthday[2];
+    const preBirthdayAge: number = today[2] - birthday[2] - 1;
+
+    if (monthAfterBirthday && todayAfterBirthday) return postBirthdayAge;
+    return preBirthdayAge;
 }
 
 export function isBirthday(): boolean {
