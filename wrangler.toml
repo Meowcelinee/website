@@ -1,4 +1,4 @@
-name = "nyatalie"
+name = "meowceline"
 pages_build_output_dir = ".vercel/output/static"
-compatibility_date = "2024-11-06"
+compatibility_date = "2025-01-20"
 compatibility_flags = [ "nodejs_compat" ]
