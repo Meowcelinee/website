@@ -18,9 +18,9 @@ export default function AboutMe() {
                 <br />
 
                 <div className='flex flex-col gap-8'>
-                    <div className='md:flex md:flex-row flex-col gap-4 md:w-4/5 w-11/12 mx-auto'>
+                    <div className='flex md:flex-row flex-col gap-4 md:w-4/5 w-11/12 mx-auto'>
                         <Codeblock />
-                        <div className='block bg-gradient-to-tr from-mantle via-crust to-mantle py-3 px-4 rounded-md border-2 border-transparent transition duration-500 md:w-4/5 w-11/12 h-fit md:hover:border-overlay0'>
+                        <div className='block bg-gradient-to-tr from-mantle via-crust to-mantle py-3 px-4 mx-auto rounded-md border-2 border-transparent transition duration-500 md:w-4/5 w-11/12 h-fit md:hover:border-overlay0'>
                             <p className='text-subtext1'>
                                 here&apos;s that but in a more.. readable
                                 format:
