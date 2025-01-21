@@ -23,7 +23,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 />
                 <meta
                     property='og:image'
-                    content='https://nyatalie.pages.dev/images/picrews/2439112.png'
+                    content='https://meowceline.pages.dev/images/picrews/2439112.png'
                 />
                 <meta property='og:image:width' content='300' />
                 <meta property='og:image:height' content='300' />
