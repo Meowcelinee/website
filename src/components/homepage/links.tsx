@@ -9,10 +9,10 @@ export default function AboutLink(props: LinkItem) {
             target='_blank'
         >
             <div className='flex flex-col'>
-                <h3 className='md:text-2xl text-xl text-pink font-medium w-fit'>
+                <h3 className='md:text-xl text-lg text-pink font-medium w-fit'>
                     {props.name}
                 </h3>
-                <h2 className='md:text-lg text-subtext1 font-medium'>
+                <h2 className='md:text-lg text-subtext0 font-medium'>
                     {props.username}
                 </h2>
             </div>
@@ -20,10 +20,10 @@ export default function AboutLink(props: LinkItem) {
     ) : (
         <div className='bg-mantle border-2 border-transparent rounded-lg my-2 py-2 px-2 md:w-[49%] w-full'>
             <div className='flex flex-col'>
-                <h3 className='md:text-2xl text-xl font-medium w-fit'>
+                <h3 className='md:text-xl text-lg text-subtext1 font-medium w-fit'>
                     {props.name}
                 </h3>
-                <h2 className='md:text-lg text-subtext1 font-medium'>
+                <h2 className='md:text-lg text-subtext0 font-medium'>
                     {props.username}
                 </h2>
             </div>

@@ -10,7 +10,7 @@ export default function Codeblock() {
                 <div className='border-b-2 border-surface1 mb-2 text-subtext0 italic text-sm px-1'>
                     marceline.ts
                 </div>
-                <div className='font-medium md:text-sm text-xs px-2'>
+                <div className='font-medium text-sm px-2'>
                     <MarcelineTs />
                 </div>
             </div>
