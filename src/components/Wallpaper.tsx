@@ -29,8 +29,6 @@ export default function Wallpapers() {
                         .replace('.png', '.webp')
                         .replace('.jpg', '.webp')}`;
 
-                    console.log(previewPath);
-
                     return (
                         <div
                             className={classNames('p-0', {

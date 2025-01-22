@@ -24,7 +24,7 @@ export default function Header() {
                     <Link href='/'>
                         <Image
                             className='transition duration-500 md:hover:scale-110'
-                            src='/images/home.png'
+                            src='/images/home.svg'
                             width={35}
                             height={35}
                             alt=''
