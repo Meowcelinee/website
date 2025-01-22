@@ -1,17 +1,18 @@
 export default function getAge(): number {
-    const birthday = [1, 13, 2006];
+    const [birthMonth, birthday, birthYear] = [1, 13, 2006];
     const currentDate = new Date().toLocaleDateString().split('/');
-    const today = [
+
+    const [thisMonth, today, thisYear] = [
         Number(currentDate[0]),
         Number(currentDate[1]),
         Number(currentDate[2]),
     ];
 
-    const monthAfterBirthday: boolean = today[0] >= birthday[0];
-    const todayAfterBirthday: boolean = today[1] >= birthday[1];
+    const monthAfterBirthday: boolean = thisMonth >= birthMonth;
+    const todayAfterBirthday: boolean = today >= birthday;
 
-    const postBirthdayAge: number = today[2] - birthday[2];
-    const preBirthdayAge: number = today[2] - birthday[2] - 1;
+    const postBirthdayAge: number = thisYear - birthYear;
+    const preBirthdayAge: number = thisYear - birthYear - 1;
 
     if (monthAfterBirthday && todayAfterBirthday) return postBirthdayAge;
     return preBirthdayAge;
