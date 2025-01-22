@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { getAge } from '@/src/data/marceline';
+import getAge from '@/src/lib/marceline/getAge';
 
 export default function List() {
     return (

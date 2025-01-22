@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Footer from '@/src/components/footer';
 import Header from '@/src/components/header/header';
-import '@/src/styles/globals.css';
+import '@/src/globals.css';
 
 export default function App({ Component, pageProps }: AppProps) {
     const router = useRouter();

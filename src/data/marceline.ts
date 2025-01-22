@@ -26,31 +26,3 @@ export const marceline: Nerd = {
     interests: ['Music', 'Programming', 'Destiny 2', 'Minecraft', 'Women'],
     colon: 3,
 };
-
-const date = new Date();
-
-export function getAge(): number {
-    const birthday = [1, 17, 2006];
-    const currentDate = new Date().toLocaleDateString().split('/');
-    const today = [
-        Number(currentDate[0]),
-        Number(currentDate[1]),
-        Number(currentDate[2]),
-    ];
-
-    const monthAfterBirthday: boolean = today[0] >= birthday[0];
-    const todayAfterBirthday: boolean = today[1] >= birthday[1];
-
-    const postBirthdayAge: number = today[2] - birthday[2];
-    const preBirthdayAge: number = today[2] - birthday[2] - 1;
-
-    if (monthAfterBirthday && todayAfterBirthday) return postBirthdayAge;
-    return preBirthdayAge;
-}
-
-export function isBirthday(): boolean {
-    const birthday = '1/13';
-    const currentDate = date.toLocaleDateString().split('/');
-    const today = `${currentDate[0]}/${currentDate[1]}`;
-    return today === birthday ? true : false;
-}
