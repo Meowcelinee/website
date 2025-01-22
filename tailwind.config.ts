@@ -19,7 +19,7 @@ const config: Config = {
             },
             animation: {
                 appear: 'appear 1.25s ease-in-out',
-                appearShort: 'appear 0.5s ease-in',
+                appearShort: 'appear 1s ease-in',
             },
         },
     },
