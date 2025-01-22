@@ -5,13 +5,13 @@ import { useState } from 'react';
 import classNames from 'classnames';
 
 export default function Wallpapers() {
-    const [imageLoaded, setImageLoaded] = useState(false);
+    const [imagesLoaded, setImagesLoaded] = useState(false);
 
     return (
         <>
             <div
                 className={classNames('flex', {
-                    'hidden ': imageLoaded,
+                    'hidden ': imagesLoaded,
                 })}
             >
                 <h2 className='text-yellow font-semibold text-xl animate-pulse italic'>
@@ -23,10 +23,18 @@ export default function Wallpapers() {
                     return a.name < b.name ? -1 : a.name > b.name ? 1 : 0;
                 })
                 .map((wp, wpKey) => {
+                    // TODO: find an api to automatically convert the pngs to webp
+                    const previewPath = `/images/wallpapers/previews/${wp.src
+                        .split('/')[3]
+                        .replace('.png', '.webp')
+                        .replace('.jpg', '.webp')}`;
+
+                    console.log(previewPath);
+
                     return (
                         <div
                             className={classNames('p-0', {
-                                'invisible h-0': !imageLoaded,
+                                'invisible h-0': !imagesLoaded,
                             })}
                             key={wpKey}
                         >
@@ -38,12 +46,13 @@ export default function Wallpapers() {
                                         className='w-fit'
                                     >
                                         <Image
-                                            width={800}
-                                            height={450}
+                                            width={600}
+                                            height={300}
                                             alt={wp.name}
-                                            src={wp.src}
-                                            className='rounded-t-lg transition ease-in-out duration-300 hover:scale-105'
-                                            onLoad={() => setImageLoaded(true)}
+                                            src={previewPath}
+                                            className='rounded-t-lg transition ease-in-out h-fit w-fit duration-300 hover:scale-105'
+                                            onLoad={() => setImagesLoaded(true)}
+                                            quality={60}
                                         />
                                     </Link>
                                     <div className='px-3 py-2 mb-2'>
