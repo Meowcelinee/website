@@ -8,7 +8,7 @@ interface Wallpaper {
 const wallpapers: Wallpaper[] = [
     {
         ctp: true,
-        name: 'Fake Macos',
+        name: 'Fake MacOS',
         dimensions: '1920x1080',
         src: '/images/wallpapers/catppuccin-macos.png',
     },
