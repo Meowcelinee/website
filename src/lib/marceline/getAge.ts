@@ -1,5 +1,5 @@
 export default function getAge(): number {
-    const birthday = [1, 17, 2006];
+    const birthday = [1, 13, 2006];
     const currentDate = new Date().toLocaleDateString().split('/');
     const today = [
         Number(currentDate[0]),
