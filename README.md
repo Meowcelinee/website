@@ -1,6 +1,9 @@
-this is a site i made to uhhh learn how to do this shit
+uhhhhhh hi this is my website
 
-**_AT MY OWN FUCKING PACE_** lmao
+the goal of making this was to like learn shit i guess (and also clout /j)
 
--   [Next.js Documentation](https://nextjs.org/docs)
--   [Learn Next.js](https://nextjs.org/learn)
+:D
+
+<hr />
+
+hosted on [cloudflare pages](https://pages.cloudflare.com)
