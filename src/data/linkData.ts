@@ -35,9 +35,9 @@ const links: LinkItem[] = [
         username: '@meowcelineeee',
     },
     {
-        name: 'Pronouns.page',
-        link: 'https://en.pronouns.page/@Nyatalieeee',
-        username: '@Nyatalieeee (for now :p)',
+        name: 'Bluesky',
+        link: 'https://marcelineeee.bsky.social',
+        username: '@marcelineeee.bsky.social',
     },
     {
         name: '<3',
