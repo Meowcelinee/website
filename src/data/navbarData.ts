@@ -1,7 +1,4 @@
-interface NavLink {
-    title: string;
-    link: string;
-}
+import { NavLink } from '@/src/types/LinkTypes';
 
 const navLinks: NavLink[] = [
     {

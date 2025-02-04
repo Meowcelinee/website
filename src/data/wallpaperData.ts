@@ -1,9 +1,4 @@
-interface Wallpaper {
-    ctp: boolean;
-    dimensions: string;
-    name: string;
-    src: string;
-}
+import Wallpaper from '@/src/types/WallpaperTypes';
 
 const wallpapers: Wallpaper[] = [
     {

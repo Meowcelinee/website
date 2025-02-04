@@ -1,9 +1,4 @@
-interface Picrew {
-    author: string;
-    image: string;
-    name: string;
-    link: string;
-}
+import { Picrew } from '@/src/types/PicrewTypes';
 
 const picrews: Picrew[] = [
     {

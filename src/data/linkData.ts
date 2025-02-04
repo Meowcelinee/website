@@ -1,8 +1,4 @@
-interface LinkItem {
-    name: string;
-    link?: string;
-    username?: string;
-}
+import { LinkItem } from '@/src/types/LinkTypes';
 
 const links: LinkItem[] = [
     {
