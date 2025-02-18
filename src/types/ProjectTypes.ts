@@ -3,7 +3,7 @@ enum Lang {
     HTML = 'HTML/CSS',
     JS = 'Javascript',
     PYTHON = 'Python',
-    TSX = 'Typescript/TSX',
+    TSX = 'Typescript (NextJS)',
 }
 
 type Date = { start: string; complete?: string };
