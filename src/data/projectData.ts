@@ -58,6 +58,7 @@ const projects: Project[] = [
         },
         date: {
             start: '11/28/2024',
+            complete: '2/22/2025',
         },
         wip: true,
     },
