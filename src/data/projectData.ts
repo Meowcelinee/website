@@ -51,7 +51,8 @@ const projects: Project[] = [
         wip: true,
     },
     {
-        name: 'mystery project :)',
+        name: 'OOCQC Site',
+        link: 'https://oocqc.pages.dev/',
         language: {
             lang: Lang.TSX,
             img: '/images/lang/react.png',
@@ -60,7 +61,7 @@ const projects: Project[] = [
             start: '11/28/2024',
             complete: '2/22/2025',
         },
-        wip: true,
+        wip: false,
     },
     {
         name: 'Pylist',
