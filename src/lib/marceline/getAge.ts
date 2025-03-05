@@ -17,6 +17,8 @@ export default function getAge(): number {
     const postBirthdayAge: number = thisYear - birthYear;
     const preBirthdayAge: number = thisYear - birthYear - 1;
 
+    // - if it's a month after my birthday, OR if it's a day after my birthday in the SAME month,
+    // - return the post birthday age. otherwise return the pre birthday age
     return monthAfterBirthday || (monthDuringBirthday && todayAfterBirthday)
         ? postBirthdayAge
         : preBirthdayAge;

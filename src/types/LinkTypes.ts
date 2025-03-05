@@ -1,12 +1,10 @@
-interface LinkItem {
+export type LinkItem = {
     name: string;
     link?: string;
     username?: string;
-}
+};
 
-interface NavLink {
+export type NavLink = {
     title: string;
     link: string;
-}
-
-export type { LinkItem, NavLink };
+};
