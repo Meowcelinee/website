@@ -10,7 +10,7 @@ export default function Homepage() {
                         <Image
                             width={250}
                             height={250}
-                            src='/images/picrews/2439112.png'
+                            src='/images/picrews/696554.png'
                             alt=''
                             className='rounded-full transition duration-700 md:hover:-translate-y-3'
                             quality={65}

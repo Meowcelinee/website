@@ -49,6 +49,12 @@ const picrews: Picrew[] = [
         name: '*StarGazerスターゲイザー*',
         link: 'https://picrew.me/en/image_maker/2410587',
     },
+    {
+        author: 'WolfStarArt',
+        image: '/images/picrews/696554.png',
+        name: 'Doggy Maker (no im not a puppygirl)',
+        link: 'https://picrew.me/en/image_maker/696554',
+    },
 ];
 
 export default picrews;
