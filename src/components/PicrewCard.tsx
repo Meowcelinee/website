@@ -22,7 +22,7 @@ export default function PicrewCards() {
                 return (
                     <div
                         className={classNames(
-                            'bg-mantle w-72 my-5 md:mx-3 mx-auto p-4 rounded-md',
+                            'bg-mantle drop-shadow-sm w-72 my-5 md:mx-3 mx-auto p-4 rounded-md',
                             { 'invisible h-0': !picrewLoaded }
                         )}
                         key={picrew.name}

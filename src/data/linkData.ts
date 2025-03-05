@@ -37,7 +37,7 @@ const links: LinkItem[] = [
     },
     {
         name: '<3',
-        link: 'https://github.com/Nyameliaaaa',
+        link: 'https://nyamelia.pages.dev/',
         username: 'Nyameliaaaa',
     },
     {

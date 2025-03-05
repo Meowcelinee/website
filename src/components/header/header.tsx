@@ -23,7 +23,7 @@ export default function Header() {
                 <div className='flex align-middle md:mx-8 mx-3 my-3'>
                     <Link href='/'>
                         <Image
-                            className='transition duration-500 md:hover:scale-110'
+                            className='transition duration-300 md:hover:scale-110 md:hover:hue-rotate-90'
                             src='/images/home.svg'
                             width={35}
                             height={35}
