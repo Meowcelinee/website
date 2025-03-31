@@ -9,7 +9,7 @@ const projects: Project[] = [
             img: '/images/lang/html.png',
         },
         date: {
-            start: '3/13/2024',
+            start: '2024-03-13',
         },
         wip: false,
     },
@@ -21,8 +21,8 @@ const projects: Project[] = [
             img: '/images/lang/html.png',
         },
         date: {
-            start: '4/17/2024',
-            complete: '8/1/2024',
+            start: '2024-04-17',
+            complete: '2024-08-01',
         },
         wip: false,
     },
@@ -34,7 +34,7 @@ const projects: Project[] = [
             img: '/images/lang/react.png',
         },
         date: {
-            start: '8/4/2024',
+            start: '2024-08-04',
         },
         wip: true,
     },
@@ -46,7 +46,7 @@ const projects: Project[] = [
             img: '/images/lang/react.png',
         },
         date: {
-            start: '8/1/2024',
+            start: '2024-08-01',
         },
         wip: true,
     },
@@ -58,8 +58,8 @@ const projects: Project[] = [
             img: '/images/lang/react.png',
         },
         date: {
-            start: '11/28/2024',
-            complete: '2/22/2025',
+            start: '2024-11-28',
+            complete: '2025-02-22',
         },
         wip: false,
     },
@@ -70,7 +70,7 @@ const projects: Project[] = [
             img: '/images/lang/python.png',
         },
         date: {
-            start: '12/3/2024',
+            start: '2024-12-03',
         },
         wip: true,
     },
@@ -82,7 +82,7 @@ const projects: Project[] = [
             img: '/images/lang/js.png',
         },
         date: {
-            start: '6/6/2024',
+            start: '2024-06-06',
         },
         wip: false,
     },
@@ -94,8 +94,8 @@ const projects: Project[] = [
             img: '/images/lang/js.png',
         },
         date: {
-            start: '3/22/2024',
-            complete: '3/30/2024',
+            start: '2025-03-22',
+            complete: '2025-03-30',
         },
         wip: false,
     },
@@ -107,8 +107,8 @@ const projects: Project[] = [
             img: '/images/lang/css.png',
         },
         date: {
-            start: '2/25/2024',
-            complete: '3/17/2024',
+            start: '2024-02-25',
+            complete: '2024-03-17',
         },
         wip: false,
     },
@@ -120,8 +120,8 @@ const projects: Project[] = [
             img: '/images/lang/css.png',
         },
         date: {
-            start: '8/13/2024',
-            complete: '9/7/2024',
+            start: '2024-08-13',
+            complete: '2024-09-07',
         },
         wip: false,
     },
