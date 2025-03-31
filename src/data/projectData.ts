@@ -87,6 +87,19 @@ const projects: Project[] = [
         wip: false,
     },
     {
+        name: 'MFHS Clock',
+        link: 'https://mfhsclock.pages.dev/',
+        language: {
+            lang: Lang.JS,
+            img: '/images/lang/js.png',
+        },
+        date: {
+            start: '3/22/2024',
+            complete: '3/30/2024',
+        },
+        wip: false,
+    },
+    {
         name: 'Picrew Userstyle',
         link: 'https://github.com/catppuccin/userstyles/tree/main/styles/picrew',
         language: {
