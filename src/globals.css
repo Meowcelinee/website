@@ -4,6 +4,11 @@
 /* Nerd font icons */
 @import url('https://www.nerdfonts.com/assets/css/webfont.css');
 
+::selection {
+    background: #cba6f7;
+    color: #11111b;
+}
+
 body {
     font-family: 'IBM Plex Sans';
 }
