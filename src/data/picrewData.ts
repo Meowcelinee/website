@@ -55,6 +55,12 @@ const picrews: Picrew[] = [
         name: 'Doggy Maker (no im not a puppygirl)',
         link: 'https://picrew.me/en/image_maker/696554',
     },
+    {
+        author: 'Haenan',
+        image: '/images/picrews/1175508.png',
+        name: '🌟해난표 반짝반짝🌟',
+        link: 'https://picrew.me/en/image_maker/1175508',
+    },
 ];
 
 export default picrews;
