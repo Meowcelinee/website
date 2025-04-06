@@ -10,9 +10,9 @@ export default function Homepage() {
                         <Image
                             width={250}
                             height={250}
-                            src='/images/picrews/696554.png'
+                            src='/images/picrews/1175508.png'
                             alt=''
-                            className='rounded-full transition duration-700 md:hover:-translate-y-3'
+                            className='rounded-full transition duration-500 md:hover:scale-105'
                             quality={65}
                         />
                     </div>
