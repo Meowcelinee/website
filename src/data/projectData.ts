@@ -2,18 +2,6 @@ import { Project, Lang } from '@/src/types/ProjectTypes';
 
 const projects: Project[] = [
     {
-        name: 'My Original Site (pages.gay)',
-        link: 'https://nyatalie.pages.gay',
-        language: {
-            lang: Lang.HTML,
-            img: '/images/lang/html.png',
-        },
-        date: {
-            start: '2024-03-13',
-        },
-        wip: false,
-    },
-    {
         name: 'Original Gae Enterprises Site',
         link: 'https://gae-ent.vercel.app/',
         language: {
