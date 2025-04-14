@@ -38,7 +38,7 @@ export default function MarcelineTs() {
                     birthday<span className='text-teal'>:</span> <span className='text-green'>&apos;{marceline.birthday}&apos;</span>,<br />
 
                     {/* orientation */}
-                    orientation<span className='text-teal'>:</span> <span className='text-green'>&apos;{marceline.orientation}&apos;</span>,<br />
+                    orientation<span className='text-teal'>:</span> <span className='text-green'>&apos;{`${marceline.orientation}`}&apos;</span>,<br />
 
                     {/* pronouns: she/her */}
                     pronouns<span className='text-teal'>:</span> <span className='text-peach'>[</span><br />
