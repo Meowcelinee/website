@@ -1,4 +1,4 @@
-import { marceline } from '@/src/data/marceline';
+import marceline from '@/src/data/marceline';
 
 const openBrace = <>&#123;</>;
 const closeBrace = <>&#125;</>;
@@ -38,14 +38,7 @@ export default function MarcelineTs() {
                     birthday<span className='text-teal'>:</span> <span className='text-green'>&apos;{marceline.birthday}&apos;</span>,<br />
 
                     {/* orientation */}
-                    orientation<span className='text-teal'>:</span> <span className='text-peach'>{openBrace}</span><br />
-                    <div className='md:pl-8 pl-4'>
-                        {/* orientation */}
-                        romantic<span className='text-teal'>:</span> <span className='text-green'>&apos;{marceline.orientation.romantic}&apos;</span>,<br />
-                        {/* sexuality */}
-                        sexuality<span className='text-teal'>:</span> <span className='text-green'>&apos;{marceline.orientation.sexuality}&apos;</span>,<br />
-                    </div>
-                    <span className='text-peach'>{closeBrace}</span>,<br />
+                    orientation<span className='text-teal'>:</span> <span className='text-green'>&apos;{marceline.orientation}&apos;</span>,<br />
 
                     {/* pronouns: she/her */}
                     pronouns<span className='text-teal'>:</span> <span className='text-peach'>[</span><br />
