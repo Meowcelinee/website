@@ -22,36 +22,46 @@ export default function PicrewCards() {
                 return (
                     <div
                         className={classNames(
-                            'bg-mantle drop-shadow-sm w-72 my-5 md:mx-3 mx-auto p-4 rounded-md',
+                            'flex gap-3 bg-gradient-to-r from-mantle via-mantle to-crust drop-shadow-sm w-full my-2 md:mx-3 mx-auto p-2 rounded-md',
                             { 'invisible h-0': !picrewLoaded }
                         )}
                         key={picrew.name}
                     >
-                        <Link href={picrew.image} target='_blank'>
-                            <Image
-                                src={picrew.image}
-                                width={500}
-                                height={500}
-                                className='rounded-md drop-shadow-lg mx-auto mb-2 md:w-fit transition-all duration-150 md:hover:scale-105'
-                                alt=''
-                                onLoad={() => setPicrewLoaded(true)}
-                            />
-                        </Link>
-                        <p className='font-bold'>{picrew.name}</p>
-                        <p className='text-overlay1'>
-                            by{' '}
-                            <span className='font-semibold text-subtext0'>
-                                {picrew.author}
-                            </span>
-                        </p>
-                        <Link
-                            className='text-pink underline transition-all duration-300 hover:text-text'
-                            href={picrew.link}
-                            target='_blank'
-                        >
-                            Source{' '}
-                            <i className='nf nf-oct-link_external text-xs' />
-                        </Link>
+                        <div className='min-w-fit'>
+                            <Link href={picrew.image} target='_blank'>
+                                <Image
+                                    src={picrew.image}
+                                    width={90}
+                                    height={90}
+                                    className='rounded-md drop-shadow-lg mx-auto md:w-fit transition-all duration-200 md:hover:scale-105'
+                                    alt=''
+                                    onLoad={() => setPicrewLoaded(true)}
+                                />
+                            </Link>
+                        </div>
+                        <div className='flex flex-col justify-between max-h-fit'>
+                            <div className='bg'>
+                                <p className='md:text-lg text-sm font-bold mb-1'>
+                                    {picrew.name}
+                                </p>
+                                <p className='text-overlay1 text-sm'>
+                                    by{' '}
+                                    <span className='font-semibold text-subtext0'>
+                                        {picrew.author}
+                                    </span>
+                                </p>
+                            </div>
+                            <div className='mb-1'>
+                                <Link
+                                    className='text-pink underline transition-all duration-300 hover:text-text'
+                                    href={picrew.link}
+                                    target='_blank'
+                                >
+                                    Source{' '}
+                                    <i className='nf nf-oct-link_external text-xs' />
+                                </Link>
+                            </div>
+                        </div>
                     </div>
                 );
             })}
