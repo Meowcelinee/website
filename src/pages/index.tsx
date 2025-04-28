@@ -14,6 +14,7 @@ export default function Homepage() {
                             alt=''
                             className='rounded-full transition duration-500 md:hover:scale-105'
                             quality={65}
+                            priority
                         />
                     </div>
                     <div className='md:animate-appear animate-appearTranslate md:justify-start flex flex-col justify-center md:mx-0 m-auto text-left'>
