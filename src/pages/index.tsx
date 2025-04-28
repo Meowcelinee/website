@@ -17,7 +17,7 @@ export default function Homepage() {
                             priority
                         />
                     </div>
-                    <div className='md:animate-appear animate-appearTranslate md:justify-start flex flex-col justify-center md:mx-0 m-auto text-left'>
+                    <div className='md:animate-appearShort animate-appearTranslate md:justify-start flex flex-col justify-center md:mx-0 m-auto text-left'>
                         <h1 className='md:text-4xl text-4xl font-semibold'>
                             marceline raine :3
                         </h1>
