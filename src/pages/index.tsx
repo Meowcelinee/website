@@ -4,8 +4,8 @@ import Directory from '@/src/components/homepage/Directory';
 export default function Homepage() {
     return (
         <>
-            <div className='animate-appear bg-gradient-to-b from-base to-mantle md:py-12 py-16'>
-                <div className='flex md:flex-row flex-col gap-8 justify-center'>
+            <div className='bg-gradient-to-b from-base to-mantle md:py-12 py-16'>
+                <div className='md:animate-appearShort animate-appearShortTranslate flex md:flex-row flex-col gap-8 justify-center'>
                     <div className='flex md:justify-end justify-center my-auto'>
                         <Image
                             width={250}
@@ -16,7 +16,7 @@ export default function Homepage() {
                             quality={65}
                         />
                     </div>
-                    <div className='md:justify-start flex flex-col justify-center md:mx-0 m-auto text-left'>
+                    <div className='md:animate-appear animate-appearTranslate md:justify-start flex flex-col justify-center md:mx-0 m-auto text-left'>
                         <h1 className='md:text-4xl text-4xl font-semibold'>
                             marceline raine :3
                         </h1>
@@ -29,7 +29,7 @@ export default function Homepage() {
                     </div>
                 </div>
             </div>
-            <div className='animate-appearShort bg-mantle w-full px-4 py-3 md:my-12 my-4'>
+            <div className='animate-delayedAppear w-full px-4 py-3 md:my-12 my-4'>
                 <h2 className='md:text-3xl text-2xl text-center font-semibold'>
                     directory
                 </h2>
