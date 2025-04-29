@@ -27,18 +27,16 @@ export default function PicrewCards() {
                         )}
                         key={picrew.name}
                     >
-                        <div className='min-w-fit'>
-                            <Link href={picrew.image} target='_blank'>
-                                <Image
-                                    src={picrew.image}
-                                    width={90}
-                                    height={90}
-                                    className='rounded-md drop-shadow-lg mx-auto md:w-fit transition-all duration-200 md:hover:scale-105'
-                                    alt=''
-                                    onLoad={() => setPicrewLoaded(true)}
-                                />
-                            </Link>
-                        </div>
+                        <Link href={picrew.image} target='_blank'>
+                            <Image
+                                src={picrew.image}
+                                width={90}
+                                height={90}
+                                className='rounded-md drop-shadow-lg mx-auto transition-all duration-200 md:hover:scale-105'
+                                alt={picrew.name}
+                                onLoad={() => setPicrewLoaded(true)}
+                            />
+                        </Link>
                         <div className='flex flex-col justify-between max-h-fit'>
                             <div className='bg'>
                                 <p className='md:text-lg text-sm font-bold mb-1'>
