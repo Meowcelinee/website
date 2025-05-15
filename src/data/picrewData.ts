@@ -52,7 +52,7 @@ const picrews: Picrew[] = [
     {
         author: 'WolfStarArt',
         image: '/images/picrews/696554.png',
-        name: 'Doggy Maker (no im not a puppygirl)',
+        name: 'Doggy Maker',
         link: 'https://picrew.me/en/image_maker/696554',
     },
     {
