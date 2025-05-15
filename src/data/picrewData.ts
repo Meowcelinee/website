@@ -61,6 +61,12 @@ const picrews: Picrew[] = [
         name: '🌟해난표 반짝반짝🌟',
         link: 'https://picrew.me/en/image_maker/1175508',
     },
+    {
+        author: 'makowka',
+        image: '/images/picrews/644129.png',
+        name: 'makowka character maker II',
+        link: 'https://picrew.me/en/image_maker/644129',
+    },
 ];
 
 export default picrews;
