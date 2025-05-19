@@ -67,6 +67,12 @@ const picrews: Picrew[] = [
         name: 'makowka character maker II',
         link: 'https://picrew.me/en/image_maker/644129',
     },
+    {
+        author: 'luoza',
+        image: '/images/picrews/2366392.png',
+        name: "Aluada's picrew",
+        link: 'https://picrew.me/en/image_maker/2366392',
+    },
 ];
 
 export default picrews;
