@@ -12,7 +12,7 @@ export default function AboutLink(props: LinkItem) {
                 <h3 className='md:text-xl text-lg text-pink font-medium w-fit'>
                     {props.name}
                 </h3>
-                <h2 className='md:text-lg text-subtext0 font-medium'>
+                <h2 className='md:text-lg text-subtext0 font-medium italic'>
                     {props.username}
                 </h2>
             </div>
@@ -23,7 +23,7 @@ export default function AboutLink(props: LinkItem) {
                 <h3 className='md:text-xl text-lg text-subtext1 font-medium w-fit'>
                     {props.name}
                 </h3>
-                <h2 className='md:text-lg text-subtext0 font-medium'>
+                <h2 className='md:text-lg text-subtext0 font-medium italic'>
                     {props.username}
                 </h2>
             </div>
