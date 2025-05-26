@@ -1,4 +1,3 @@
-// i *could* make this shorter but then it would be fucking unintelligible
 export default function getAge(): number {
     const [birthMonth, birthday, birthYear] = [1, 13, 2006];
     const currentDate = new Date().toLocaleDateString().split('/');
@@ -23,3 +22,7 @@ export default function getAge(): number {
         ? postBirthdayAge
         : preBirthdayAge;
 }
+
+// prettier-ignore
+const getAgeOneLiner = (): number => (Number(new Date().toLocaleDateString().split('/')[0]) > 1) || (Number(new Date().toLocaleDateString().split('/')[0]) === 1 && Number(new Date().toLocaleDateString().split('/')[1]) >= 13) ? Number(new Date().toLocaleDateString('/')[2]) - 2006 : Number(new Date().toLocaleDateString('/')[2]) - 2006 - 1;
+// ^^^^ and this is why we use variables.
