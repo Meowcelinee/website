@@ -6,19 +6,19 @@ const links: LinkItem[] = [
         username: '@meowcelinee.',
     },
     {
-        name: 'git.gay',
-        link: 'https://git.gay/meowcelinee',
-        username: 'meowcelinee',
-    },
-    {
         name: 'GitHub',
         link: 'https://github.com/Meowcelinee',
         username: 'Meowcelinee',
     },
     {
-        name: 'Mastodon',
-        link: 'https://tech.lgbt/@ideltic',
-        username: 'tech.lgbt/@ideltic',
+        name: 'git.gay',
+        link: 'https://git.gay/meowcelinee',
+        username: 'meowcelinee',
+    },
+    {
+        name: 'Pronoun Page',
+        link: 'https://en.pronouns.page/@meowceline',
+        username: '@meowceline',
     },
     {
         name: 'Threads',

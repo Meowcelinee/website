@@ -1,12 +1,13 @@
 import Link from 'next/link';
-import getAge from '@/src/lib/marceline/getAge';
+import marceline from '@/src/lib/marceline';
 
 export default function List() {
     return (
         <ul className='flex flex-col gap-3 list-disc list-inside odd:marker:text-pink even:marker:text-sky'>
             <li>
-                i&apos;m a {getAge()} year old trans girl who likes music,
-                programming (sometimes), destiny 2, minecraft, and other women
+                i&apos;m a {marceline.getAge!()} year old trans girl who likes
+                music, programming (occasionally), destiny 2, minecraft, and
+                other women
             </li>
             <li>
                 i used to live in texas(s) but currently live in connecticut
