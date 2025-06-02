@@ -36,11 +36,6 @@ const links: LinkItem[] = [
         username: '@marcelineeee.bsky.social',
     },
     {
-        name: '<3',
-        link: 'https://nyamelia.pages.dev/',
-        username: 'Nyameliaaaa',
-    },
-    {
         name: 'Cool people',
         link: 'https://queercraft.net',
     },
