@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }: AppProps) {
     return (
         <>
             <Head>
-                <title>my site :3</title>
+                <title>marceline&apos;s old site</title>
                 <meta name='description' content='made with nextjs' />
 
                 <meta property='og:title' content="marceline's website :3" />
@@ -36,7 +36,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 />
                 <meta
                     property='og:image'
-                    content='https://meowceline.pages.dev/images/picrews/696554.png'
+                    content='https://meowceline.pages.dev/images/picrews/1918788.png'
                 />
                 <meta property='og:image:width' content='300' />
                 <meta property='og:image:height' content='300' />

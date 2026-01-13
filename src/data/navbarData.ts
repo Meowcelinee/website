@@ -17,6 +17,10 @@ const navLinks: NavLink[] = [
         title: 'wallpapers',
         link: '/wallpapers',
     },
+    {
+        title: 'NEW SITE',
+        link: 'https://meowcelinee.pages.gay/',
+    },
 ];
 
 export default navLinks;

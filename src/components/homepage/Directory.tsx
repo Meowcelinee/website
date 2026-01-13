@@ -13,7 +13,7 @@ function DirectoryLink(props: NavLink) {
 }
 
 export default function Directory() {
-    return navLinks.map((link, linkKey) => {
-        return <DirectoryLink {...link} key={linkKey} />;
-    });
+    return navLinks
+        .filter(link => link.title !== 'NEW SITE')
+        .map((link, linkKey) => <DirectoryLink {...link} key={linkKey} />);
 }
