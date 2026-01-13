@@ -1,12 +1,13 @@
 import Link from 'next/link';
+import marceline from '../lib/marceline';
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
 
     return (
         <div className='bg-mantle mt-1 mx-2 md:py-3 md:px-3 py-2 px-2'>
-            <p className='text-subtext1'>
-                &copy; {currentYear} marceline raine :3{' '}
+            <p className='text-overlay2'>
+                &copy; {currentYear} {marceline.firstName} {marceline.lastName}{' '}
                 <span className='text-xs text-overlay2 opacity-60'>
                     (not actually but idc)
                 </span>

@@ -2,8 +2,8 @@ import { Nerd } from '@/src/types/MarcelineTypes';
 
 const marceline: Nerd = {
     firstName: 'Marceline',
-    middleName: 'Ashley',
-    lastName: 'Raine',
+    middleName: 'Avery',
+    lastName: 'Brown',
     birthday: {
         year: 2006,
         month: 1,
@@ -11,7 +11,7 @@ const marceline: Nerd = {
     },
     orientation: 'Lesbian',
     pronouns: ['she/her'],
-    interests: ['Music', 'Programming', 'Destiny 2', 'Minecraft', 'Women'],
+    interests: ['Music', 'Programming', 'Games', 'Women'],
     colon: 3,
 
     getAge: function (): number {
