@@ -1,9 +1,3 @@
-uhhhhhh hi this is my website
+this is my old website go look at my new one instead gogogogogo
 
-the goal of making this was to like learn shit i guess (and also clout /j)
-
-:D
-
-<hr />
-
-hosted on [cloudflare pages](https://pages.cloudflare.com)
+### [https://meowcelinee.pages.gay/](https://meowcelinee.pages.gay/)
